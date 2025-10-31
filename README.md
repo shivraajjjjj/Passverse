@@ -2,7 +2,7 @@
 
 PassVerse is a simple yet powerful **password manager** built with **C++ and Qt6**, designed to store your credentials securely using encryption derived from a master password.  
 **Main Window**
-[Main Window](resources\MainWindow.png)
+[Main Window](MainWindow.png)
 ---
 
 ## Features
@@ -75,5 +75,6 @@ Or
 open in Qt Creator, then:
   Set build type to Release
   Run windeployqt PassVerse.exe before packaging
+
 
 
