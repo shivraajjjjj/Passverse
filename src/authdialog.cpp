@@ -2,7 +2,6 @@
 #include "ui_authdialog.h"
 #include "sessionkey.h"
 #include "cryptohelper.h"
-#include "hashing.h"
 #include<QMessageBox>
 #include<QFile>
 #include<QTextStream>
@@ -86,3 +85,4 @@ QByteArray authDialog::getSalt() {
     QJsonObject obj = doc.object();
     return QByteArray::fromBase64(obj["salt"].toString().toUtf8());
 }
+
