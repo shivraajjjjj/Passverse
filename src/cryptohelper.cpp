@@ -5,10 +5,6 @@
 #include <QDebug>
 #include <openssl/evp.h>
 #include <openssl/rand.h>
-#include "cryptohelper.h"
-#include <openssl/evp.h>
-#include <openssl/rand.h>
-#include <QDebug>
 
 QByteArray CryptoHelper::generateRandomBytes(int size) {
     QByteArray data(size, 0);
@@ -85,3 +81,4 @@ bool CryptoHelper::validateDecryption(const QByteArray &cipher, const QByteArray
     QString result = decryptAES(cipher, key, iv);
     return !result.isEmpty();
 }
+
