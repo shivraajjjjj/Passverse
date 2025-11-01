@@ -1,6 +1,5 @@
 #include "creatempassdialog.h"
 #include "ui_creatempassdialog.h"
-#include "hashing.h"
 #include "cryptohelper.h"
 #include<QByteArray>
 #include<QFile>
@@ -56,3 +55,4 @@ void createMpassDialog::on_submitBtn_clicked()
             return;
         }
 }
+
